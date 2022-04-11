@@ -6,7 +6,7 @@ import Results from "./Results"
 import Key from "./Key"
 const { Octokit } = require("@octokit/rest");
 
-const token = "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";
+const token = "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";
 const octokit = new Octokit({ auth: token, userAgent: 'myApp v1.2.3' });
 
 var searchInput;
