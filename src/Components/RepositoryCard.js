@@ -10,8 +10,8 @@ class RepositoryCard extends React.Component{
                 <div className="Repository-card">
                     <div className="card-body">
                         <div className="row">
-                            <h5 className="col-6 card-title">{this.props.repositoryDataname}</h5>
-                            <h6 className="col-6 Star text-end"><GoStar/> {this.props.repositoryDatastargazers_count}</h6>
+                            <h5 className="col-6 card-title">{this.props.repositoryData.name}</h5>
+                            <h6 className="col-6 Star text-end"><GoStar/> {this.props.repositoryData.stargazers_count}</h6>
                         </div>
                         <h6 className="card-subtitle"><GoPerson/> {this.props.repositoryData.owner.login}</h6>
                         <h6 className="card-text" >{this.props.repositoryData.description}</h6>

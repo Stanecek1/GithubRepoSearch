@@ -1,12 +1,12 @@
 import React from "react";
-let ids = ["javascript", "java", "html", "python", "swift", "cpp", "cs"];
+
 class Key extends React.Component {
-    
+    ids = ["javascript", "java", "html", "python", "swift", "cpp", "cs"];
     //handles event when laguage key is changed
     handleChange(e) {
         let isChecked = e.target.checked;
         if (isChecked){
-            ids.forEach(element => {
+            this.ids.forEach(element => {
                 document.getElementById(element).checked = false;
             });
             e.target.checked = true;
