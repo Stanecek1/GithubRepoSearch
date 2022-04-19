@@ -5,16 +5,14 @@ import RepositoryCard  from "./RepositoryCard";
 class Results extends React.Component{
 
     render(){
-        this.state = {
-            data: this.props.data
-        }
 
-        if (this.state.data != null){
+
+        if (this.props.data != null){
             return(
                 <div className="card" >
                     <table className="table table-bordered table-dark">
                         <tbody>
-                            {this.state.data.map((result, index) => ( 
+                            {this.props.data.map((result, index) => ( 
                                 <tr>
                                     <td><RepositoryCard repositoryData={result}></RepositoryCard></td>
                                 </tr>
